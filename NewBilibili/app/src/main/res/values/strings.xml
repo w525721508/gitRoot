@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">NewBilibili</string>
+    <string name="title_activity_index">Index</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string-array name="storehouse">
+        <item>0,35,12,42,</item>
+        <item>12,42,24,35,</item>
+        <item>24,35,12,28,</item>
+        <item>0,35,12,28,</item>
+        <item>0,21,12,28,</item>
+        <item>12,28,24,21,</item>
+        <item>24,35,24,21,</item>
+        <item>24,21,12,14,</item>
+        <item>0,21,12,14,</item>
+        <item>0,21,0,7,</item>
+        <item>12,14,0,7,</item>
+        <item>12,14,24,7,</item>
+        <item>24,7,12,0,</item>
+        <item>0,7,12,0,</item>
+    </string-array>
+</resources>

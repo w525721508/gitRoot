@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "bibi.com.newbilibili"
+        minSdkVersion 18
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/MobCommons-2017.0608.1618.jar')
+    compile files('libs/MobTools-2017.0608.1618.jar')
+    compile files('libs/ShareSDK-Core-3.0.0.jar')
+    compile files('libs/ShareSDK-QQ-3.0.0.jar')
+    compile files('libs/ShareSDK-SinaWeibo-3.0.0.jar')
+    compile files('libs/ShareSDK-Wechat-3.0.0.jar')
+    compile files('libs/ShareSDK-Wechat-Core-3.0.0.jar')
+    compile files('libs/ShareSDK-Wechat-Favorite-3.0.0.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-3.0.0.jar')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:support-vector-drawable:25.3.1'
+    testCompile 'junit:junit:4.12'
+    // https://mvnrepository.com/artifact/in.srain.cube/ultra-ptr
+    compile 'in.srain.cube:ptr-load-more:1.0.2'
+    // https://mvnrepository.com/artifact/jp.wasabeef/recyclerview-animators
+    compile 'com.android.support:recyclerview-v7:25.0.0'
+    compile 'jp.wasabeef:recyclerview-animators:2.2.5'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'io.reactivex:rxandroid:1.2.0'
+    compile 'com.google.code.gson:gson:2.6.2'
+    // https://mvnrepository.com/artifact/com.github.bumptech.glide/glide
+    compile group: 'com.github.bumptech.glide', name: 'glide', version: '3.8.0'
+    //视频播放框架
+    // https://mvnrepository.com/artifact/fm.jiecao/jiecaovideoplayer
+    compile 'fm.jiecao:jiecaovideoplayer:5.5'
+
+
+}
